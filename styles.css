@@ -38,10 +38,54 @@ nav a:hover {
     color: #7f6599; /* Slightly lighter purple */
 }
 
-/* Main Content */
-main {
-    max-width: 800px;
-    margin: 20px auto;
+/* Main Content Wrapper */
+.content-wrapper {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 25%;
+    background-color: #e8e4d9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-section {
+    margin-bottom: 20px;
+}
+
+.sidebar h2 {
+    font-size: 1.2em;
+    color: #3b5c45; /* Earthy green for outdoorsy vibe */
+    font-family: 'Verdana', sans-serif;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 8px;
+}
+
+.sidebar li a {
+    text-decoration: none;
+    color: #555;
+}
+
+.sidebar li a:hover {
+    color: #007acc;
+}
+
+/* Blog Main Content */
+.blog-main {
+    width: 70%;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -76,4 +120,5 @@ footer {
     padding: 20px;
     color: #7f6599;
     font-size: 0.9rem;
+    background-color: #e8e4d9;
 }
