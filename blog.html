@@ -378,3 +378,118 @@
     </script>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chaotic Coffee Blog - Your guide to survival skills, sustainable living, self-improvement and practical lifestyle tips">
+    <meta name="keywords" content="survival skills, sustainable living, homeschooling, chess strategies, workout tips, self-improvement, gardening">
+    <meta name="author" content="Chaotic Coffee Blog">
+    <meta property="og:title" content="Chaotic Coffee Blog">
+    <meta property="og:description" content="Practical guides on survival, sustainable living, self-improvement and lifestyle">
+    <meta property="og:image" content="/images/chaotic-coffee-logo.jpg">
+    <meta property="og:url" content="https://chaoticcoffee.com">
+    <title>Chaotic Coffee Blog | Survival Skills & Sustainable Living Guide</title>
+    <link rel="canonical" href="https://rbeard33.github.io/personal-website/blog.html" />
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add structured data for blog -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Chaotic Coffee Blog",
+        "description": "Practical guides on survival skills, sustainable living, and self-improvement",
+        "url": "https://rbeard33.github.io/personal-website/blog.html",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://rbeard33.github.io/personal-website/blog.html"
+        }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Chaotic Coffee Blog - Survival Skills & Sustainable Living</h1>
+        <nav aria-label="Main navigation">
+            <a href="index.html" title="Home">Home</a>
+            <a href="about.html" title="About Us">About</a>
+            <a href="blog.html" title="Blog Posts">Blog</a>
+            <a href="contact.html" title="Contact Us">Contact</a>
+        </nav>
+    </header>
+
+    <div class="content-wrapper">
+        <!-- Sidebar Section -->
+        <aside class="sidebar" role="complementary">
+            <section class="sidebar-section">
+                <h2>Categories</h2>
+                <ul aria-label="Blog categories">
+                    <li><a href="#" onclick="filterPosts('outdoors')" title="Outdoors & Nature posts">Outdoors & Nature</a></li>
+                    <li><a href="#" onclick="filterPosts('health')" title="Health & Wellness posts">Health & Wellness</a></li>
+                    <li><a href="#" onclick="filterPosts('finance')" title="Finance posts">Finance</a></li>
+                    <li><a href="#" onclick="filterPosts('lifestyle')" title="Lifestyle posts">Lifestyle</a></li>
+                    <li><a href="#" onclick="filterPosts('technology')" title="Technology posts">Technology</a></li>
+                    <li><a href="#" onclick="filterPosts('all')" title="View all posts">Show All</a></li>
+                </ul>
+            </section>
+            <section class="sidebar-section">
+                <h2>Recent Posts</h2>
+                <ul aria-label="Recent blog posts">
+                    <li><a href="post32.html" title="Read about Surviving Radiation Exposure">Surviving Radiation Exposure</a></li>
+                    <li><a href="post31.html" title="Learn about The History of Bitcoin">The History of Bitcoin</a></li>
+                    <li><a href="post30.html" title="Guide to Going Off-Grid">Going Off-Grid: A Beginner's Guide</a></li>
+                    <li><a href="post29.html" title="Best Steaks for Entrees guide">Best Steaks for Entrees</a></li>
+                    <li><a href="post28.html" title="Learn about EMP Protection Generators">EMP Protection Generators</a></li>
+                </ul>
+            </section>
+        </aside>
+
+        <!-- Main Blog Content Section -->
+        <main class="blog-main" role="main">
+            <section aria-label="Blog posts">
+                <article data-category="lifestyle">
+                    <h3><a href="post57.html" title="Complete guide to homeschooling">Dipping Your Toes Into Homeschooling: A Beginner's Guide</a></h3>
+                    <p>Considering homeschooling? Here's a practical guide to navigating the first few years, with pros, cons, teaching styles, and the 80/20 rule for lazy parents. Make the leap into personalized education!</p>
+                    <a href="post57.html" class="read-more" title="Read full article about homeschooling">Read more</a>
+                </article>
+                <!-- Additional articles with similar optimizations -->
+            </section>
+        </main>
+    </div>
+
+    <footer role="contentinfo">
+        <p>&copy; 2024 Chaotic Coffee Blog | <a href="privacy.html">Privacy Policy</a> | <a href="sitemap.xml">Sitemap</a></p>
+    </footer>
+
+    <script>
+        // Enhanced filtering function with smooth transitions
+        function filterPosts(category) {
+            const posts = document.querySelectorAll('article');
+            posts.forEach(post => {
+                post.style.transition = 'opacity 0.3s ease-in-out';
+                if (category === 'all' || post.getAttribute('data-category') === category) {
+                    post.style.display = 'block';
+                    setTimeout(() => post.style.opacity = '1', 10);
+                } else {
+                    post.style.opacity = '0';
+                    setTimeout(() => post.style.display = 'none', 300);
+                }
+            });
+            // Update URL with category parameter for better tracking
+            const url = new URL(window.location);
+            url.searchParams.set('category', category);
+            window.history.pushState({}, '', url);
+        }
+
+        // Add lazy loading for images
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                img.loading = 'lazy';
+            });
+        });
+    </script>
+</body>
+</html>
