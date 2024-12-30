@@ -122,7 +122,146 @@ footer {
     font-size: 0.9rem;
     background-color: #e8e4d9;
 }
+
 .sidebar-section ul li a.active {
     font-weight: bold;
     color: #007acc;
+}
+
+/* Breadcrumb Navigation */
+.breadcrumb {
+    padding: 10px 20px;
+    background: #f8f7f3;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.breadcrumb ol {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.breadcrumb li:not(:last-child)::after {
+    content: "›";
+    margin-left: 10px;
+    color: #5a4b81;
+}
+
+/* Article Meta Information */
+.article-meta {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.category {
+    background: #5a4b81;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+/* Related Posts Section */
+.related-posts {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #e8e4d9;
+}
+
+.related-posts h3 {
+    color: #5a4b81;
+    margin-bottom: 15px;
+}
+
+.related-posts ul {
+    list-style: none;
+    padding: 0;
+}
+
+.related-posts li {
+    margin-bottom: 10px;
+}
+
+/* Social Links in Footer */
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #5a4b81;
+    text-decoration: none;
+}
+
+/* Accessibility Improvements */
+a:focus {
+    outline: 2px solid #5a4b81;
+    outline-offset: 2px;
+}
+
+/* Content Area Styles */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Article Content Styles */
+.article-content h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #4b3b60;
+}
+
+.article-content p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Print Styles */
+@media print {
+    header nav,
+    .sidebar,
+    .social-links {
+        display: none;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+    
+    .content {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    
+    .sidebar,
+    .blog-main {
+        width: 100%;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
 }
