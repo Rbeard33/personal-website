@@ -3,35 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Meet Riley - exploring survival skills, financial independence, gardening, and intentional living. Join me for practical guides and authentic insights on modern self-reliance.">
+    <meta name="keywords" content="survival skills, financial independence, minimalist gardening, intentional living, self-reliance blog">
+    <meta name="author" content="Riley | Chaotic Coffee Blog">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="About Riley | Chaotic Coffee Blog">
+    <meta property="og:description" content="Discover practical guides on survival skills, financial freedom, and intentional living. Join me in exploring modern self-reliance and mindful adventures.">
+    <meta property="og:image" content="/images/riley-profile.jpg">
+    <meta property="og:url" content="https://yourdomain.com/about.html">
+    
+    <title>About Riley | Practical Guides for Modern Self-Reliance</title>
+    <link rel="canonical" href="https://yourdomain.com/about.html" />
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Person Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Riley",
+        "url": "https://yourdomain.com",
+        "sameAs": [
+            "https://twitter.com/yourusername",
+            "https://linkedin.com/in/yourusername"
+        ],
+        "description": "Writer and explorer focusing on survival skills, financial independence, and intentional living."
+    }
+    </script>
 </head>
 <body>
     <header>
-        <h1>About Me</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact</a>
+        <h1>About Riley</h1>
+        <nav aria-label="Main navigation">
+            <a href="index.html" title="Home">Home</a>
+            <a href="about.html" title="About Me">About</a>
+            <a href="blog.html" title="Blog Posts">Blog</a>
+            <a href="contact.html" title="Contact Me">Contact</a>
         </nav>
     </header>
-    <main>
-        <section>
-            <h2>Who is me?</h2>
-            <p> I'm Riley, and this is my personal blog where I share my thoughts, experiences, and insights on topics that I'm passionate about.</p>
-        </section>
-        <section>
-            <h2>Why I Started This Blog</h2>
-            <p>I'll for sure have an answer for that at some point.</p>
-        </section>
-        <section>
-            <h2>My Mission</h2>
-            <p>*Insert Mission Impossible joke*.</p>
-        </section>
+
+    <main class="about-content" role="main">
+        <div class="about-wrapper">
+            <!-- Profile Section -->
+            <section class="profile-section">
+                <img src="/images/riley-profile.jpg" alt="Riley exploring outdoors" class="profile-image">
+                <div class="intro-text">
+                    <h2>Hey, I'm Riley 👋</h2>
+                    <p class="tagline">Exploring the intersection of survival skills, financial independence, and intentional living.</p>
+                </div>
+            </section>
+
+            <!-- What I Write About -->
+            <section class="topics-section">
+                <h2>What I Write About</h2>
+                <div class="topics-grid">
+                    <div class="topic-card">
+                        <span class="topic-icon">🛡️</span>
+                        <h3>Survival Skills</h3>
+                        <p>Practical guides for emergency preparedness and self-reliance</p>
+                    </div>
+                    <div class="topic-card">
+                        <span class="topic-icon">💰</span>
+                        <h3>Financial Freedom</h3>
+                        <p>Building wealth through smart strategies and mindful choices</p>
+                    </div>
+                    <div class="topic-card">
+                        <span class="topic-icon">🌱</span>
+                        <h3>Minimalist Gardening</h3>
+                        <p>Maximum impact gardening in minimal spaces</p>
+                    </div>
+                    <div class="topic-card">
+                        <span class="topic-icon">🧘‍♂️</span>
+                        <h3>Intentional Living</h3>
+                        <p>Creating a purposeful and meaningful lifestyle</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- My Story -->
+            <section class="story-section">
+                <h2>My Story</h2>
+                <p>Like many of you, I found myself searching for practical ways to build a more resilient and meaningful life. This blog is where I share what I've learned about survival skills, financial independence, and creating sustainable systems that actually work.</p>
+                <p>Whether you're here to learn about emergency preparedness, grow your own food, or build lasting wealth, you'll find practical, no-nonsense guides based on real experience.</p>
+            </section>
+
+            <!-- Mission Statement -->
+            <section class="mission-section">
+                <h2>My Mission</h2>
+                <blockquote>
+                    "To provide practical, actionable guides for modern self-reliance, helping others build resilient and meaningful lives."
+                </blockquote>
+            </section>
+
+            <!-- Newsletter Signup -->
+            <section class="newsletter-section">
+                <h2>Join the Adventure</h2>
+                <p>Get practical tips and guides delivered straight to your inbox.</p>
+                <form class="signup-form" action="/subscribe" method="POST">
+                    <input type="email" name="email" placeholder="Your email address" required>
+                    <button type="submit">Join Now</button>
+                </form>
+            </section>
+
+            <!-- Featured In -->
+            <section class="featured-section">
+                <h2>Featured In</h2>
+                <div class="featured-logos">
+                    <!-- Add your featured publication logos here -->
+                </div>
+            </section>
+        </div>
     </main>
-    <footer>
-        <p>&copy; 2024 My Blog</p>
+
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <p>&copy; 2024 Chaotic Coffee Blog | <a href="privacy.html">Privacy Policy</a> | <a href="sitemap.xml">Sitemap</a></p>
+            <div class="social-links">
+                <a href="#" title="Follow on Twitter">Twitter</a>
+                <a href="#" title="Connect on LinkedIn">LinkedIn</a>
+                <a href="#" title="Follow on Instagram">Instagram</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
