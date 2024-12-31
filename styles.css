@@ -265,3 +265,133 @@ a:focus {
         margin: 10px 0;
     }
 }
+/* Add these new styles at the end of your existing styles.css file */
+
+/* Intro Section Styles */
+.intro-section {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro-content {
+    margin-top: 1.5rem;
+}
+
+/* Category Grid Styles */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+    padding: 0;
+    list-style: none;
+}
+
+.category-card {
+    background: #f3f1e7;
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-card h4 {
+    color: #5a4b81;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.category-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Latest Posts Section */
+.latest-posts {
+    margin: 2rem 0;
+    padding: 2rem;
+    background: #f8f7f3;
+    border-radius: 8px;
+}
+
+.latest-posts h3 {
+    color: #5a4b81;
+    margin-bottom: 1rem;
+}
+
+.latest-posts ul {
+    list-style: none;
+    padding: 0;
+}
+
+.latest-posts li {
+    margin: 1rem 0;
+}
+
+.latest-posts a {
+    color: #4b3b60;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.latest-posts a:hover {
+    color: #7f6599;
+    text-decoration: underline;
+}
+
+/* CTA Section */
+.cta-section {
+    text-align: center;
+    margin: 3rem 0 1rem;
+    padding: 2rem;
+    background: #5a4b81;
+    color: white;
+    border-radius: 8px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    background: #ffffff;
+    color: #5a4b81;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background 0.2s ease;
+}
+
+.cta-button:hover {
+    background: #f3f1e7;
+}
+
+/* Footer Content */
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .intro-section {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-section {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+    }
+}
