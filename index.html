@@ -3,25 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Discover practical guides on survival skills, financial independence, health optimization, and sustainable living. Evidence-based advice for modern self-reliance.">
+    <meta name="keywords" content="survival skills, financial independence, health optimization, off grid living, digital privacy, sustainable living">
+    <meta name="author" content="Chaotic Coffee Blog">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Chaotic Coffee Blog | Practical Guides for Modern Self-Reliance">
+    <meta property="og:description" content="Your trusted resource for survival skills, financial independence, and intentional living. Evidence-based guides for a self-reliant lifestyle.">
+    <meta property="og:image" content="/images/chaotic-coffee-logo.jpg">
+    <meta property="og:url" content="https://yourdomain.com">
+    
+    <title>Chaotic Coffee Blog | Practical Guides for Modern Self-Reliance</title>
+    <link rel="canonical" href="https://yourdomain.com" />
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Website Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Website",
+        "name": "Chaotic Coffee Blog",
+        "description": "Practical guides for modern self-reliance and intentional living",
+        "url": "https://yourdomain.com"
+    }
+    </script>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Blog</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact</a>
+        <h1>Chaotic Coffee Blog</h1>
+        <nav aria-label="Main navigation">
+            <a href="index.html" title="Home">Home</a>
+            <a href="about.html" title="About Us">About</a>
+            <a href="blog.html" title="Blog Posts">Blog</a>
+            <a href="contact.html" title="Contact Us">Contact</a>
         </nav>
     </header>
-    <main>
-        <h2>Introduction</h2>
-        <p>Hi.</p>
+
+    <main class="content" role="main">
+        <div class="intro-section">
+            <h2>Practical Guides for Modern Self-Reliance</h2>
+            
+            <div class="intro-content">
+                <p>Welcome to Chaotic Coffee Blog, where we break down complex topics into actionable steps for modern self-reliance. Whether you're preparing for uncertainties, building wealth, or optimizing your health, you'll find practical, evidence-based guidance here.</p>
+                
+                <div class="featured-categories">
+                    <h3>Explore Our Main Topics:</h3>
+                    <ul class="category-grid">
+                        <li class="category-card survival">
+                            <h4>🛡️ Survival & Preparedness</h4>
+                            <p>From EMP protection to radiation safety, master essential survival skills.</p>
+                        </li>
+                        <li class="category-card finance">
+                            <h4>💰 Financial Independence</h4>
+                            <p>Learn wealth-building strategies from Warren Buffett to modern entrepreneurs.</p>
+                        </li>
+                        <li class="category-card health">
+                            <h4>🧠 Health Optimization</h4>
+                            <p>Evidence-based health insights from Dr. Huberman, Tim Ferriss, and more.</p>
+                        </li>
+                        <li class="category-card lifestyle">
+                            <h4>🏡 Sustainable Living</h4>
+                            <p>Practical guides for off-grid living and self-sufficiency.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="latest-posts">
+                    <h3>Latest Insights:</h3>
+                    <ul>
+                        <li><a href="post32.html">Surviving Radiation Exposure: Essential Guide</a></li>
+                        <li><a href="post31.html">The History of Bitcoin: Digital Revolution</a></li>
+                        <li><a href="post30.html">Going Off-Grid: A Beginner's Guide</a></li>
+                    </ul>
+                </div>
+
+                <div class="cta-section">
+                    <p>Ready to take control of your life and build real self-reliance? Start with our most popular guides below or explore our categories to find exactly what you need.</p>
+                    <a href="blog.html" class="cta-button">Explore All Guides</a>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer>
-        <p>&copy; 2024 My Blog</p>
+
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <p>&copy; 2024 Chaotic Coffee Blog | <a href="privacy.html">Privacy Policy</a> | <a href="sitemap.xml">Sitemap</a></p>
+            <nav class="social-links" aria-label="Social media links">
+                <a href="#" title="Follow us on Twitter">Twitter</a>
+                <a href="#" title="Follow us on Facebook">Facebook</a>
+            </nav>
+        </div>
     </footer>
 </body>
 </html>
