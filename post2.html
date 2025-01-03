@@ -46,7 +46,7 @@
         </nav>
     </header>
 
-    <!-- Added breadcrumb navigation -->
+    <!-- Breadcrumb Navigation -->
     <nav class="breadcrumb" aria-label="Breadcrumb">
         <ol>
             <li><a href="index.html">Home</a></li>
@@ -62,42 +62,39 @@
             <div class="article-meta">
                 <time itemprop="datePublished" datetime="2024-01-13">January 13, 2024</time>
                 <span class="category">Lifestyle & Culture</span>
-                <span class="read-time">5 min read</span>
+                <span class="read-time">8 min read</span>
             </div>
 
             <div class="content-wrapper">
-                <!-- Your existing content with enhanced formatting -->
-                
-                <!-- Added Quick Navigation -->
-                <div class="quick-nav">
-                    <h3>Quick Navigation</h3>
-                    <ul>
-                        <li><a href="#origins">Origins & History</a></li>
-                        <li><a href="#facts">Fun Facts</a></li>
-                        <li><a href="#modern">Modern Celebrations</a></li>
-                    </ul>
-                </div>
+                <h2 id="origins">Origins & History</h2>
+                <p>Friday the 13th has long been associated with bad luck, but its origins go back to ancient times. Many believe it stems from Norse mythology, where Loki, the trickster god, crashed a dinner of 12 gods, making him the unlucky 13th guest. In Christianity, the superstition is linked to the Last Supper, where Judas was the 13th attendee. Combine this with the belief that Friday was the day of Jesus's crucifixion, and you have a recipe for superstition.</p>
 
-                <!-- Added Did You Know Section -->
+                <h2 id="facts">Fun Facts About Friday the 13th</h2>
+                <ul>
+                    <li>The fear of Friday the 13th is called <strong>paraskevidekatriaphobia</strong>.</li>
+                    <li>Hotels and skyscrapers often skip the 13th floor entirely.</li>
+                    <li>It’s estimated that millions of dollars are lost each Friday the 13th due to people avoiding travel, work, or major decisions.</li>
+                    <li>Black Sabbath released their first album on Friday the 13th in 1970.</li>
+                </ul>
+
+                <h2 id="modern">Modern Celebrations</h2>
+                <p>Today, Friday the 13th is celebrated in various ways, ranging from spooky to fun:</p>
+                <ul>
+                    <li><strong>Horror movie marathons:</strong> Catch classics like <em>Friday the 13th</em> or explore indie horrors.</li>
+                    <li><strong>Special rock concerts:</strong> Bands often align album releases or gigs with the date for added buzz.</li>
+                    <li><strong>Tattoo parlors:</strong> Many offer discounted tattoos featuring the number 13 or spooky designs.</li>
+                    <li><strong>Theme park events:</strong> Parks host haunted houses or spooky rides to celebrate the date.</li>
+                </ul>
+
+                <!-- Added Fun Facts Section -->
                 <div class="fun-facts-box">
                     <h3>🤘 Did You Know? 🤘</h3>
                     <ul>
-                        <li>Taylor Swift considers 13 her lucky number</li>
-                        <li>Black Sabbath's debut album was released on Friday the 13th</li>
-                        <li>Some heavy metal bands specifically choose Friday the 13th for album releases</li>
+                        <li>Taylor Swift considers 13 her lucky number.</li>
+                        <li>Some airports skip gate 13 for superstitious travelers.</li>
+                        <li>In Italy, 13 is considered a lucky number!</li>
                     </ul>
                 </div>
-
-                <!-- Added Modern Celebrations Section -->
-                <section id="modern">
-                    <h2 class="section-title">🎸 Modern Friday the 13th Celebrations 🎸</h2>
-                    <ul class="rock-list">
-                        <li>Horror movie marathons</li>
-                        <li>Rock concerts and special events</li>
-                        <li>Theme park special nights</li>
-                        <li>Tattoo specials (Friday the 13th flash)</li>
-                    </ul>
-                </section>
 
                 <!-- Related Posts Section -->
                 <section class="related-posts">
@@ -124,27 +121,29 @@
         </div>
     </footer>
 
-    <!-- Added Structured Data for FAQ -->
+    <!-- FAQ Schema -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "mainEntity": [{
-            "@type": "Question",
-            "name": "What is the fear of Friday the 13th called?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The fear of Friday the 13th is called paraskevidekatriaphobia."
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is the fear of Friday the 13th called?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The fear of Friday the 13th is called paraskevidekatriaphobia."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Why is Friday the 13th considered unlucky?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The superstition combines two traditionally unlucky elements: Friday and the number 13, both considered ominous in various cultures."
+                }
             }
-        },
-        {
-            "@type": "Question",
-            "name": "Why is Friday the 13th considered unlucky?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The superstition combines two traditionally unlucky elements: Friday (the day of Jesus's crucifixion) and the number 13, which has been considered unlucky in various cultures."
-            }
-        }]
+        ]
     }
     </script>
 </body>
