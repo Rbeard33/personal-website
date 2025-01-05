@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Why It Can Be Colder in Arizona Than Illinois This Time of Year</title>
+    <meta name="description" content="Why it can be colder in Arizona than Illinois. Explore the factors like elevation, dry air, and desert geography contributing to this temperature twist.">
+    <title>Why Arizona Can Be Colder Than Illinois: Elevation, Dry Air & More</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
+    <header role="banner">
         <h1>Why It Can Be Colder in Arizona Than Illinois This Time of Year</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
     <main class="content">
@@ -38,8 +42,12 @@
             <p>So, while Illinois and Arizona each experience winter in unique ways, it’s no surprise that certain factors—like elevation, humidity, and desert air—can make Arizona feel surprisingly chilly. Next time you think of Arizona as the “hot state,” remember that its landscape has a few cold-weather tricks up its sleeve!</p>
         </article>
     </main>
-    <footer>
-        <p>&copy; 2024 My Blog</p>
+    <footer role="contentinfo">
+        <p>&copy; <span id="currentYear">2024</span> My Blog</p>
     </footer>
+    <script>
+        // Update the year dynamically in the footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
