@@ -20,7 +20,7 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
-    padding: 0 20px;
+    padding: 0 5vw;
 }
 
 /* Enhanced Header Styles */
@@ -36,7 +36,7 @@ header {
 
 header h1 {
     color: var(--primary-color);
-    font-size: 2.5rem;
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
     font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
     margin-bottom: 1rem;
 }
@@ -47,6 +47,7 @@ nav {
     justify-content: center;
     gap: 20px;
     padding: 10px 0;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -63,7 +64,7 @@ nav a:hover {
     color: var(--white);
 }
 
-/* New Quick Reference Box */
+/* Quick Reference Box */
 .quick-reference {
     background: #f8f7f3;
     border-left: 4px solid var(--primary-color);
@@ -93,27 +94,7 @@ nav a:hover {
     left: 0;
 }
 
-/* New Temperature Guide */
-.temperature-guide {
-    background: var(--white);
-    padding: 20px;
-    border-radius: 8px;
-    margin: 20px 0;
-    box-shadow: var(--shadow);
-}
-
-.temp-chart {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    margin-top: 15px;
-}
-
-/* New Expert Insights Cards */
-.expert-insights {
-    margin: 30px 0;
-}
-
+/* Expert Insights Cards */
 .expert-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -128,70 +109,7 @@ nav a:hover {
     box-shadow: var(--shadow);
 }
 
-/* New Progress Tracker */
-.progress-tracker {
-    background: #f8f7f3;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 30px 0;
-}
-
-.download-button {
-    display: inline-block;
-    background: var(--primary-color);
-    color: var(--white);
-    padding: 10px 20px;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: background 0.3s ease;
-}
-
-.download-button:hover {
-    background: var(--secondary-color);
-}
-
-/* Enhanced Article Meta */
-.article-meta {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin: 20px 0;
-    font-size: 0.9rem;
-    color: #666;
-}
-
-.category {
-    background: var(--primary-color);
-    color: var(--white);
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-}
-
-/* Enhanced Blockquotes */
-blockquote {
-    border-left: 4px solid var(--primary-color);
-    padding: 15px;
-    margin: 20px 0;
-    background: #f8f7f3;
-    font-style: italic;
-}
-
-/* New Safety Checklist */
-.safety-checklist {
-    background: #fff3f3;
-    border: 2px solid #ff9999;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 20px 0;
-}
-
-.safety-checklist h3 {
-    color: #cc0000;
-    margin-bottom: 15px;
-}
-
-/* Enhanced Related Posts */
+/* Related Posts */
 .related-posts {
     background: var(--white);
     padding: 20px;
@@ -212,13 +130,32 @@ blockquote {
 }
 
 .related-posts li::before {
-    content: "→";
+    content: "\2192"; /* Right arrow */
     position: absolute;
     left: 0;
     color: var(--primary-color);
 }
 
-/* Enhanced Footer */
+/* Social Share Buttons */
+.social-share {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-share a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.social-share a:hover {
+    background: var(--accent-color);
+}
+
+/* Footer */
 footer {
     background: var(--primary-color);
     color: var(--white);
@@ -234,30 +171,8 @@ footer {
     gap: 40px;
 }
 
-.social-share {
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.social-share a {
-    color: var(--white);
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 4px;
-    background: rgba(255, 255, 255, 0.1);
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 1.8rem;
-    }
-
-    nav {
-        flex-direction: column;
-    }
-
     .expert-cards {
         grid-template-columns: 1fr;
     }
@@ -265,15 +180,17 @@ footer {
     .article-meta {
         flex-wrap: wrap;
     }
+
+    nav {
+        flex-direction: column;
+    }
 }
 
 /* Print Styles */
 @media print {
+    .social-share,
     .quick-reference,
-    .temperature-guide,
-    .expert-insights,
-    .progress-tracker,
-    .social-share {
+    .related-posts {
         display: none;
     }
 }
